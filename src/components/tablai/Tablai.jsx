@@ -3,7 +3,7 @@ import { data } from "../../data/data";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import "./tabla.css";
 
-function Tablas({ titulos }) {
+function Tabla({ titulos }) {
   const [paginaActual, setPaginaActual] = useState(1);
   const [filasPorPagina, setFilasPorPagina] = useState(6);
   const [filtroOT, setFiltroOT] = useState("");
@@ -103,7 +103,11 @@ function Tablas({ titulos }) {
                 <td>{fila.Hora}</td>
                 <td>{fila.Tipo}</td>
                 <td>{fila.Estado}</td>
-                <td>{fila.Asignado}</td>
+                <td>
+                  <select name="|" id="|">
+                    <option value="|">{fila.Asignado}</option>
+                  </select>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -145,4 +149,4 @@ function Tablas({ titulos }) {
   );
 }
 
-export default Tablas;
+export default Tabla;
