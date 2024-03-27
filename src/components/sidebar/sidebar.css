@@ -1,0 +1,30 @@
+.Diseño {
+    display: flex;
+    gap: 5px;
+    &:hover {
+      background-color: rgb(0, 155, 253, 1);
+      text-decoration-color: white;
+    }
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    color: white;
+
+  }
+  svg {
+    color: white;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 150px;
+  }
+  

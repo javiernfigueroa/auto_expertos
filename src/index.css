@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  background-color: hsla(216, 78%, 7%, 1);
+  width: 15rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  font-family: "Inter", sans-serif;
+}
+.sidebar img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+}
